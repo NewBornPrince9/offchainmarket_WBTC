@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offchain Market | Exclusive OTC Trading</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: radial-gradient(circle at top right, #1e293b, #0f172a); }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .accent-text { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-slate-200">
+
+    <nav class="fixed w-full z-50 glass border-b border-white/5 py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter">OFFCHAIN<span class="text-sky-400">MARKET</span></div>
+            <div class="flex items-center gap-6 text-sm font-medium">
+                <select id="langBtn" class="bg-transparent border border-white/20 rounded px-2 py-1 outline-none cursor-pointer hover:border-sky-400 transition">
+                    <option value="en" class="text-slate-900">English</option>
+                    <option value="id" class="text-slate-900">Indonesia</option>
+                </select>
+                <a href="#products" class="hover:text-sky-400 transition">Products</a>
+                <a href="https://wa.me/yournumber" class="bg-sky-500 hover:bg-sky-600 px-5 py-2 rounded-full text-white transition">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-gradient pt-32 pb-20 px-6">
+        <div class="container mx-auto text-center max-w-4xl">
+            <span id="hero-badge" class="px-4 py-1 rounded-full border border-sky-400/30 text-sky-400 text-xs font-bold uppercase tracking-widest mb-6 inline-block">Direct OTC Liquidity</span>
+            <h1 id="hero-title" class="text-5xl md:text-7xl font-bold mb-8 leading-tight">Elite Trading Without <br><span class="accent-text">Market Slippage</span></h1>
+            <p id="hero-desc" class="text-lg text-slate-400 mb-12 leading-relaxed">Offchain Market provides a secure platform for direct Over-The-Counter transactions. Buy and sell high-value assets directly with the source, bypassing exchange volatility.</p>
+        </div>
+    </section>
+
+    <section id="products" class="py-24 bg-[#0a0f1d]">
+        <div class="container mx-auto px-6">
+            <h2 id="prod-title" class="text-3xl font-bold text-center mb-16">Verified Asset Listings</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="glass p-4 rounded-2xl transform hover:scale-[1.02] transition">
+                    <img src="image_25e06f.jpg" class="rounded-xl shadow-2xl mb-6" alt="WBTC Market Price">
+                    <h3 class="text-xl font-bold mb-2">Institutional WBTC Liquidity</h3>
+                    <p class="text-slate-400 text-sm">Real-time market tracking for our core assets. High FDV and stable price action for professional traders.</p>
+                </div>
+                <div class="glass p-4 rounded-2xl transform hover:scale-[1.02] transition">
+                    <img src="image_45dcec.png" class="rounded-xl shadow-2xl mb-6" alt="Token Balance">
+                    <h3 class="text-xl font-bold mb-2">Verified Balances</h3>
+                    <p class="text-slate-400 text-sm">Full transparency of asset holdings. We ensure every transaction is backed by verified on-chain reserves.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 border-y border-white/5">
+        <div class="container mx-auto px-6">
+            <h2 id="testi-title" class="text-3xl font-bold text-center mb-16 text-sky-400">Trusted by Global Partners</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-3xl relative">
+                    <i class="fa fa-quote-left text-sky-500/20 text-4xl absolute top-6 left-6"></i>
+                    <p class="italic text-slate-300 mb-8 pt-4">"The OTC experience with Offchain Market was seamless. For a $100k+ transaction, avoiding exchange slippage saved us thousands. Highly recommended for serious players."</p>
+                    <div class="flex items-center gap-4 border-t border-white/10 pt-6">
+                        <div class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center font-bold">JD</div>
+                        <div>
+                            <p class="font-bold">Julian D.</p>
+                            <p class="text-xs text-slate-500">Managing Partner, Singapore</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass p-8 rounded-3xl relative">
+                    <i class="fa fa-quote-left text-sky-500/20 text-4xl absolute top-6 left-6"></i>
+                    <p class="italic text-slate-300 mb-8 pt-4">"Finding deep liquidity in North Kalimantan was a challenge until we found Offchain Market. Their professionalism and direct communication are top-tier."</p>
+                    <div class="flex items-center gap-4 border-t border-white/10 pt-6">
+                        <div class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center font-bold">YS</div>
+                        <div>
+                            <p class="font-bold">Yahya SM</p>
+                            <p class="text-xs text-slate-500">CEO, KDH Project</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass p-8 rounded-3xl relative">
+                    <i class="fa fa-quote-left text-sky-500/20 text-4xl absolute top-6 left-6"></i>
+                    <p class="italic text-slate-300 mb-8 pt-4">"As a developer, I appreciate the transparency. Their GeckoTerminal listing and verified source code prove they aren't just selling tokens, but a real ecosystem."</p>
+                    <div class="flex items-center gap-4 border-t border-white/10 pt-6">
+                        <div class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center font-bold">AM</div>
+                        <div>
+                            <p class="font-bold">Afwan M.</p>
+                            <p class="text-xs text-slate-500">Blockchain Consultant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-black/50 text-center">
+        <p class="text-slate-500 text-sm tracking-widest uppercase mb-4">&copy; 2026 Offchain Market | Tarakan, North Kalimantan</p>
+        <div class="flex justify-center gap-6 text-xl text-slate-400">
+            <a href="#" class="hover:text-sky-400 transition"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-sky-400 transition"><i class="fab fa-telegram"></i></a>
+            <a href="#" class="hover:text-sky-400 transition"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        const content = {
+            en: {
+                badge: "Direct OTC Liquidity",
+                title: "Elite Trading Without <br><span class='accent-text'>Market Slippage</span>",
+                desc: "Offchain Market provides a secure platform for direct Over-The-Counter transactions. Buy and sell high-value assets directly with the source, bypassing exchange volatility.",
+                prod: "Verified Asset Listings",
+                testi: "Trusted by Global Partners"
+            },
+            id: {
+                badge: "Likuiditas OTC Langsung",
+                title: "Trading Elit Tanpa <br><span class='accent-text'>Market Slippage</span>",
+                desc: "Offchain Market menyediakan platform aman untuk transaksi Over-The-Counter langsung. Jual beli aset bernilai tinggi langsung dari sumbernya, tanpa volatilitas bursa.",
+                prod: "Daftar Aset Terverifikasi",
+                testi: "Dipercaya oleh Mitra Global"
+            }
+        };
+
+        document.getElementById('langBtn').addEventListener('change', (e) => {
+            const lang = e.target.value;
+            document.getElementById('hero-badge').innerText = content[lang].badge;
+            document.getElementById('hero-title').innerHTML = content[lang].title;
+            document.getElementById('hero-desc').innerText = content[lang].desc;
+            document.getElementById('prod-title').innerText = content[lang].prod;
+            document.getElementById('testi-title').innerText = content[lang].testi;
+        });
+    </script>
+</body>
+</html>
