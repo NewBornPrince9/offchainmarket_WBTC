@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Offchain Market | Institutional OTC Trading</title>
-    <link rel="icon" href="https://cryptologos.cc/logos/bitcoin-btc-logo.png" type="image/png">
+    <link rel="icon" href="bitcoin-btc-logo.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
-        .hero-bg { background: radial-gradient(circle at 50% -20%, #1e293b, #020617); }
         .glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
         .accent-gradient { background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .card-hover:hover { border-color: rgba(56, 189, 248, 0.4); transform: translateY(-5px); transition: all 0.3s ease; }
     </style>
 </head>
-<body class="bg-[#020617] text-slate-200">
+<body class="bg-[#020617] text-slate-200 antialiased">
 
     <nav class="fixed w-full z-50 glass border-b border-white/5 py-4">
         <div class="container mx-auto px-6 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-sky-500 rounded-lg flex items-center justify-center font-bold text-white">O</div>
+            <div class="flex items-center gap-3">
+                <img src="bitcoin-btc-logo.png" alt="Offchain Market Logo" class="w-8 h-8 rounded-full">
                 <div class="text-xl font-bold tracking-tighter">OFFCHAIN<span class="text-sky-400">MARKET</span></div>
             </div>
             <div class="flex items-center gap-6">
@@ -35,32 +34,36 @@
         </div>
     </nav>
 
-    <section class="hero-bg pt-40 pb-24 px-6 text-center">
-        <div class="container mx-auto max-w-4xl">
-            <span id="hero-badge" class="px-4 py-1 rounded-full border border-sky-400/30 text-sky-400 text-[10px] font-bold uppercase tracking-[0.2em] mb-8 inline-block">Global OTC Liquidity Engine</span>
-            <h1 id="hero-title" class="text-5xl md:text-7xl font-bold mb-8 leading-[1.1]">The Gateway to <br><span class="accent-gradient">High-Value Liquidity</span></h1>
-            <p id="hero-desc" class="text-slate-400 text-lg md:text-xl mb-12 leading-relaxed max-w-2xl mx-auto">Providing a secure, direct platform for institutional-scale transactions. Trade premium assets without order book volatility or exchange slippage.</p>
+    <header class="pt-32 pb-16 px-6 text-center bg-[#01040f]">
+        <div class="container mx-auto max-w-5xl">
+            <div class="w-full rounded-3xl overflow-hidden shadow-2xl shadow-sky-500/10 border border-gray-800 mb-12">
+                <img src="banner wbtc.png" alt="Token Wrapped BTC Banner" class="w-full h-auto">
+            </div>
+            
+            <span id="hero-badge" class="px-4 py-1 rounded-full border border-sky-400/30 text-sky-400 text-[10px] font-bold uppercase tracking-[0.2em] mb-6 inline-block">Global OTC Liquidity Engine</span>
+            <h1 id="hero-title" class="text-4xl md:text-6xl font-extrabold mb-8 leading-[1.15]">Gateway to Institutional<br><span class="accent-gradient">High-Value Liquidity</span></h1>
+            <p id="hero-desc" class="text-slate-400 text-lg md:text-xl mb-12 leading-relaxed max-w-3xl mx-auto">Offchain Market provides a secure, direct platform for professional OTC transactions. Bypassing exchange volatility and slippage.</p>
         </div>
-    </section>
+    </header>
 
-    <section class="py-12 container mx-auto px-6 -mt-20">
+    <section class="py-12 container mx-auto px-6">
         <div class="grid md:grid-cols-2 gap-6">
             <div class="glass p-8 rounded-3xl card-hover border-l-4 border-sky-400">
                 <div class="flex justify-between items-center mb-6">
-                    <span class="text-xs font-bold tracking-widest text-sky-400">ONCHAIN PRICE (WBTC)</span>
+                    <span id="label-onchain" class="text-xs font-bold tracking-widest text-sky-400 uppercase">Onchain Price (WBTC)</span>
                     <span class="flex h-2 w-2 rounded-full bg-sky-400 animate-pulse"></span>
                 </div>
                 <div class="flex items-baseline gap-3">
                     <span class="text-4xl font-bold tracking-tight">$84,144.06</span>
                     <span class="text-slate-500 text-sm font-mono">USD</span>
                 </div>
-                <p class="text-[10px] text-slate-500 mt-4 uppercase tracking-wider">Source: GeckoTerminal / BNB Chain</p>
+                <p class="text-[10px] text-slate-500 mt-4 uppercase tracking-wider">Source: GeckoTerminal / BNB Chain Pool</p>
             </div>
 
             <div class="glass p-8 rounded-3xl card-hover border-l-4 border-orange-500">
                 <div class="flex justify-between items-center mb-6">
-                    <span class="text-xs font-bold tracking-widest text-orange-500">OFFCHAIN REF (COINEX)</span>
-                    <img src="https://www.coinex.com/favicon.ico" class="w-4 h-4 opacity-50" alt="CoinEx">
+                    <span id="label-offchain" class="text-xs font-bold tracking-widest text-orange-500 uppercase">Offchain Ref (CoinEx)</span>
+                    <img src="https://www.coinex.com/favicon.ico" class="w-4 h-4 opacity-70" alt="CoinEx Favicon">
                 </div>
                 <div class="flex items-baseline gap-3">
                     <span class="text-4xl font-bold tracking-tight">$84,152.10</span>
@@ -71,63 +74,46 @@
         </div>
     </section>
 
-    <section id="products" class="py-24">
-        <div class="container mx-auto px-6">
-            <h2 id="prod-title" class="text-3xl font-bold text-center mb-16">Global Asset Verification</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="space-y-6">
-                    <div class="glass p-3 rounded-2xl overflow-hidden">
-                        <img src="image_25e06f.jpg" class="w-full rounded-xl" alt="CoinEx Price Action">
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-bold mb-2">Market Benchmark</h4>
-                        <p id="p1-desc" class="text-slate-400 text-sm leading-relaxed">Our pricing model is strictly pegged to global benchmarks, ensuring that every Offchain transaction mirrors top-tier exchange values with 100% precision.</p>
-                    </div>
-                </div>
-                <div class="space-y-6">
-                    <div class="glass p-3 rounded-2xl overflow-hidden">
-                        <img src="image_45dcec.png" class="w-full rounded-xl" alt="Asset Reserves">
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-bold mb-2">Proof of Reserves</h4>
-                        <p id="p2-desc" class="text-slate-400 text-sm leading-relaxed">Security is our foundation. Every WBTC token in our market is backed by verifiable on-chain assets, providing peace of mind for institutional-scale trades.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-24 bg-slate-900/30">
-        <div class="container mx-auto px-6">
-            <h2 id="testi-title" class="text-3xl font-bold text-center mb-16 text-sky-400 italic">Institutional Feedback</h2>
+    <section id="products" class="py-24 bg-[#0a0f1d] border-y border-white/5 mt-16 px-6">
+        <div class="container mx-auto">
+            <h2 id="testi-title" class="text-3xl font-bold text-center mb-20 text-sky-400 italic tracking-tight">Institutional Trust & Feedback</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass p-8 rounded-3xl border border-white/5">
-                    <p id="t1" class="text-slate-300 italic mb-8 leading-relaxed">"Managing large liquidity shifts off-exchange is usually a risk. Offchain Market eliminated the slippage and provided a clean, direct execution that outperformed public AMMs."</p>
-                    <div class="flex items-center gap-4">
+                <div class="glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between">
+                    <div>
+                        <i class="fa fa-quote-left text-sky-500/10 text-4xl mb-6"></i>
+                        <p id="t1" class="text-slate-300 italic mb-10 leading-relaxed">"The direct OTC execution provided by Offchain Market eliminated the slippage we usually face. For high-volume trades, this is indispensable."</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-white/10 pt-6">
                         <div class="w-10 h-10 rounded-full bg-sky-500/20 flex items-center justify-center font-bold text-sky-400 text-xs">JD</div>
                         <div class="text-xs">
                             <p class="font-bold">Julian D.</p>
-                            <p class="text-slate-500 uppercase tracking-tighter">Hedge Fund Manager</p>
+                            <p id="t1-role" class="text-slate-500 uppercase tracking-tighter">Hedge Fund Manager</p>
                         </div>
                     </div>
                 </div>
-                <div class="glass p-8 rounded-3xl border border-white/5">
-                    <p id="t2" class="text-slate-300 italic mb-8 leading-relaxed">"The transparency in their Proof of Reserves and direct correlation with CoinEx pricing makes them our preferred OTC partner for digital asset settlements."</p>
-                    <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center font-bold text-purple-400 text-xs">YS</div>
+                <div class="glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between">
+                    <div>
+                        <i class="fa fa-quote-left text-sky-500/10 text-4xl mb-6"></i>
+                        <p id="t2" class="text-slate-300 italic mb-10 leading-relaxed">"Transparency in Proof of Reserves is our priority. Offchain Market’s direct correlation with standard pricing ensures a trusted settlement every time."</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-white/10 pt-6">
+                        <img src="bitcoin-btc-logo.png" class="w-10 h-10 rounded-full" alt="Partner Logo">
                         <div class="text-xs">
                             <p class="font-bold">Yahya SM</p>
-                            <p class="text-slate-500 uppercase tracking-tighter">Executive Partner</p>
+                            <p id="t2-role" class="text-slate-500 uppercase tracking-tighter">Executive Partner</p>
                         </div>
                     </div>
                 </div>
-                <div class="glass p-8 rounded-3xl border border-white/5">
-                    <p id="t3" class="text-slate-300 italic mb-8 leading-relaxed">"A professional gateway for WBTC liquidity. Their technical implementation on the BNB Chain is flawless, offering the speed of BSC with the value of BTC."</p>
-                    <div class="flex items-center gap-4">
+                <div class="glass p-8 rounded-3xl border border-white/5 flex flex-col justify-between">
+                    <div>
+                        <i class="fa fa-quote-left text-sky-500/10 text-4xl mb-6"></i>
+                        <p id="t3" class="text-slate-300 italic mb-10 leading-relaxed">"A professional gateway for WBTC. Their implementation on the BNB Chain combines BTC's secure value with BSC's impressive transaction speed."</p>
+                    </div>
+                    <div class="flex items-center gap-4 border-t border-white/10 pt-6">
                         <div class="w-10 h-10 rounded-full bg-orange-500/20 flex items-center justify-center font-bold text-orange-400 text-xs">AM</div>
                         <div class="text-xs">
                             <p class="font-bold">Afwan M.</p>
-                            <p class="text-slate-500 uppercase tracking-tighter">Blockchain Strategist</p>
+                            <p id="t3-role" class="text-slate-500 uppercase tracking-tighter">Blockchain Strategist</p>
                         </div>
                     </div>
                 </div>
@@ -135,48 +121,66 @@
         </div>
     </section>
 
-    <footer class="py-16 text-center border-t border-white/5">
-        <div class="text-xl font-bold mb-4">OFFCHAIN<span class="text-sky-400">MARKET</span></div>
-        <p class="text-slate-500 text-xs uppercase tracking-[0.4em] mb-8">Direct Elite Liquidity</p>
-        <div class="flex justify-center gap-6 mb-12">
-            <a href="#" class="w-10 h-10 rounded-full glass flex items-center justify-center hover:text-sky-400 transition"><i class="fab fa-telegram-plane"></i></a>
-            <a href="#" class="w-10 h-10 rounded-full glass flex items-center justify-center hover:text-sky-400 transition"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="w-10 h-10 rounded-full glass flex items-center justify-center hover:text-sky-400 transition"><i class="fab fa-twitter"></i></a>
+    <footer class="py-16 text-center px-6">
+        <div class="flex justify-center items-center gap-2 mb-6">
+             <img src="bitcoin-btc-logo.png" alt="Footer Logo" class="w-7 h-7">
+             <div class="text-xl font-bold tracking-tighter">OFFCHAIN<span class="text-sky-400">MARKET</span></div>
         </div>
-        <p class="text-[10px] text-slate-600">&copy; 2026 Offchain Market Team. All Rights Reserved.</p>
+        <p class="text-slate-600 text-[11px] uppercase tracking-[0.4em] mb-12">Institutional Elite Trading Platform</p>
+        
+        <p class="text-[10px] text-slate-700 font-mono break-all max-w-lg mx-auto bg-black/30 p-2 rounded border border-white/5">CA: 0x25e636B21Db00541a3646A2732e08c190d862B00</p>
+        <p class="text-[10px] text-slate-700 mt-10">&copy; 2026 Offchain Market Global. Developed by Yahya SM & Azhar.</p>
     </footer>
 
     <script>
         const content = {
             en: {
                 badge: "Global OTC Liquidity Engine",
-                title: "The Gateway to <br><span class='accent-gradient'>High-Value Liquidity</span>",
-                desc: "Providing a secure, direct platform for institutional-scale transactions. Trade premium assets without order book volatility or exchange slippage.",
-                prod: "Global Asset Verification",
-                testi: "Institutional Feedback",
-                p1: "Our pricing model is strictly pegged to global benchmarks, ensuring that every Offchain transaction mirrors top-tier exchange values.",
-                p2: "Security is our foundation. Every WBTC token in our market is backed by verifiable on-chain assets, providing peace of mind."
+                title: "Gateway to Institutional<br><span class='accent-gradient'>High-Value Liquidity</span>",
+                desc: "Offchain Market provides a secure, direct platform for professional OTC transactions. Bypassing exchange volatility and slippage.",
+                l_on: "Onchain Price (WBTC)",
+                l_off: "Offchain Ref (CoinEx)",
+                testiT: "Institutional Trust & Feedback",
+                t1: "\"The direct OTC execution provided by Offchain Market eliminated the slippage we usually face. For high-volume trades, this is indispensable.\"",
+                t1r: "Hedge Fund Manager",
+                t2: "\"Transparency in Proof of Reserves is our priority. Offchain Market’s direct correlation with standard pricing ensures a trusted settlement every time.\"",
+                t2r: "Executive Partner",
+                t3: "\"A professional gateway for WBTC. Their implementation on the BNB Chain combines BTC's secure value with BSC's impressive transaction speed.\"",
+                t3r: "Blockchain Strategist"
             },
             id: {
                 badge: "Mesin Likuiditas OTC Global",
-                title: "Gerbang Menuju <br><span class='accent-gradient'>Likuiditas Bernilai Tinggi</span>",
-                desc: "Menyediakan platform aman dan langsung untuk transaksi skala institusi. Jual beli aset premium tanpa volatilitas order book atau slippage bursa.",
-                prod: "Verifikasi Aset Global",
-                testi: "Umpan Balik Institusional",
-                p1: "Model penetapan harga kami dipatok ketat pada tolak ukur global, memastikan setiap transaksi Offchain mencerminkan nilai bursa teratas.",
-                p2: "Keamanan adalah fondasi kami. Setiap token WBTC di pasar kami didukung oleh aset on-chain yang dapat diverifikasi."
+                title: "Gerbang Menuju Likuiditas<br><span class='accent-gradient'>Institusional Bernilai Tinggi</span>",
+                desc: "Offchain Market menyediakan platform aman dan langsung untuk transaksi OTC profesional. Menghindari volatilitas dan slippage bursa.",
+                l_on: "Harga Onchain (WBTC)",
+                l_off: "Ref Offchain (CoinEx)",
+                testiT: "Kepercayaan & Umpan Balik Institusional",
+                t1: "\"Eksekusi OTC langsung dari Offchain Market menghilangkan slippage yang biasa kami hadapi. Untuk trading volume tinggi, ini sangat krusial.\"",
+                t1r: "Manajer Hedge Fund",
+                t2: "\"Transparansi dalam Proof of Reserves adalah prioritas kami. Korelasi langsung Offchain Market dengan harga standar menjamin penyelesaian terpercaya.\"",
+                t2r: "Mitra Eksekutif",
+                t3: "\"Gerbang profesional untuk WBTC. Implementasi mereka di BNB Chain menggabungkan nilai aman BTC dengan kecepatan transaksi BSC.\"",
+                t3r: "Ahli Strategi Blockchain"
             }
         };
 
         document.getElementById('langBtn').addEventListener('change', (e) => {
             const lang = e.target.value;
+            // Update Hero
             document.getElementById('hero-badge').innerText = content[lang].badge;
             document.getElementById('hero-title').innerHTML = content[lang].title;
             document.getElementById('hero-desc').innerText = content[lang].desc;
-            document.getElementById('prod-title').innerText = content[lang].prod;
-            document.getElementById('testi-title').innerText = content[lang].testi;
-            document.getElementById('p1-desc').innerText = content[lang].p1;
-            document.getElementById('p2-desc').innerText = content[lang].p2;
+            // Update Price Labels
+            document.getElementById('label-onchain').innerText = content[lang].l_on;
+            document.getElementById('label-offchain').innerText = content[lang].l_off;
+            // Update Testimonials
+            document.getElementById('testi-title').innerText = content[lang].testiT;
+            document.getElementById('t1').innerText = content[lang].t1;
+            document.getElementById('t1-role').innerText = content[lang].t1r;
+            document.getElementById('t2').innerText = content[lang].t2;
+            document.getElementById('t2-role').innerText = content[lang].t2r;
+            document.getElementById('t3').innerText = content[lang].t3;
+            document.getElementById('t3-role').innerText = content[lang].t3r;
         });
     </script>
 </body>
